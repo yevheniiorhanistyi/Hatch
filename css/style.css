@@ -339,6 +339,7 @@ a {
 .banner-2 {
   position: relative;
   max-height: 1000px;
+  min-height: 420px;
   background: url("../img/bg/banner-2.png") no-repeat;
   background-size: cover;
 }
