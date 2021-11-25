@@ -660,6 +660,25 @@ button:focus {
   .location__title {
     min-height: 35vh;
   }
+  
+   .social {
+    text-align: center;
+  }
+  .social-icons {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+  }
+  .form {
+    width: 100%;
+    max-width: 346px;
+  }
+  .input {
+    width: 100%;
+  }
+  .button {
+    width: 60px;
+  }
 }
 @media (max-width: 768px) {
   .banner {
@@ -779,24 +798,7 @@ button:focus {
   .datetime {
     margin-right: 20px;
   }
-  .social {
-    text-align: center;
-  }
-  .social-icons {
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-  }
-  .form {
-    width: 100%;
-    max-width: 346px;
-  }
-  .input {
-    width: 100%;
-  }
-  .button {
-    width: 60px;
-  }
+ 
 }
 @media (max-width: 620px) {
   .hidden__items {
