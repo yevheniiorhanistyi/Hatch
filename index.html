@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,45 +10,43 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
 	<div class="page">
 		<div id="top" class="box box-intro">
 
-			<a onClick="document.documentElement.scrollTop = 0;">
-			<img class="toTop" src="img/arrow-up.png" alt=""></a> <!--toTop(button)-->
-			
 			<!-- burgerMenu -->
 			<div class="burger_items">
-				<div class="menu-btn">
+				<div class="menu-btn" id="menu-btn">
 					<span></span>
 					<span></span>
 					<span></span>
 				</div>
 			</div>
-			<!-- /burgerMenu -->
-			 
-				<div class="header">
-					<div class="header__items">
-						<div class="logo">
-							<img class="header__logo" src="img/logo/minilogo.png" alt="">
-						</div>
-						<div class="header-list">
-							<a href="#top" class="list__item">Ресторан</a>
-							<a href="#menu" class="list__item">Меню</a>
-							<a href="#location" class="list__item">Адреса</a>
-							<a href="#pressroom" class="list__item">Новости</a>
-						</div>
+
+			<div class="header">
+				<div class="header__items">
+					<div class="logo">
+						<img class="header__logo" src="img/logo/minilogo.png" alt="">
+					</div>
+					<div class="header-list">
+						<a href="#top" class="list__item">Ресторан</a>
+						<a href="#menu" class="list__item">Меню</a>
+						<a href="#location" class="list__item">Адреса</a>
+						<a href="#pressroom" class="list__item">Новости</a>
 					</div>
 				</div>
+			</div>
 			<div class="container">
-				
+
 				<main class="content content-intro">
 					<img class="intro__logo" src="img/logo/logo.png" alt="">
 					<h2 class="content__title">hatch Meat</h2>
 					<img class="content__img" src="img/instruments.svg" alt="">
 					<div class="content__text">
-						<p>Ресторан может быть респектабельным или демократичным, все равно самое 
-						дорогое в нем — атмосфера, которая появляется из тонкого, почти мистического сочетания ингредиентов: место-идея-еда-обстановка-люди-любовь...</p> 
+						<p>Ресторан может быть респектабельным или демократичным, все равно самое
+							дорогое в нем — атмосфера, которая появляется из тонкого, почти мистического сочетания
+							ингредиентов: место-идея-еда-обстановка-люди-любовь...</p>
 					</div>
 				</main> <!-- /content -->
 			</div> <!-- /container -->
@@ -58,165 +57,223 @@
 				<fieldset class="fieldset">
 					<legend class="title__banner">Окрошка мясная</legend>
 					<div class="content__text text__banner">
-						<p>Окрошка – популярное блюдо русской кухни. Его название происходит от слова «крошить». Мелко нарезанные свежие овощи, залитые холодным квасом с добавлением мелко струганного мяса.</p>
+						<p>Окрошка – популярное блюдо русской кухни. Его название происходит от слова «крошить». Мелко
+							нарезанные свежие овощи, залитые холодным квасом с добавлением мелко струганного мяса.</p>
 					</div>
 					<div class="about-banner">
 						<h1 class="price">360, — ₽</h1>
 						<p class="calories">250г/250 ккал.</p>
 					</div>
-				</fieldset>		
+				</fieldset>
 			</div> <!-- /container -->
+
 		</div> <!-- /banner -->
 
-		<div id="menu" class="box box-menu">
-			<div class="container">
+		<div id="menu" class="box-menu">
+			<div class="container container-menu">
+				<h1 class="menu-title">Меню</h1>
+				<h4 class="menu-subtitle">От нас невозможно уйти голодным. К вашим услугам лучший шеф-повар Москвы.</h4>
+				<ul class="menu-lists">
+					<li class="menu-lists__list-item" data-tab="#Slide-1">
+						<div class="menu-lists__list-item__title">
+							<img src="img/menu_items/item1.png" style="width: 43px; height: 38px;" alt="">
+							<h2>Горячие закуски</h2>
+						</div>
+						<div class="swiper swiper-block swiper-block--active" id="Slide-1">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="slide__item">
+										<img src="img/menu_img/img1.png" style="width: 218px; height: 180px;" alt="">
+										<h4>Тарелка свежих овощей с чесночно-творожным соусом</h4>
+										<p>Сладкий перец,томаты, огурцы, зеленые перья лука, зелень, стебли сельдерея
+										</p>
+										<p>220 г / 150 ккал.</p>
+										<div class="slide__item__price">210, — ₽</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="slide__item">
+										<img src="img/menu_img/img2.png" style="width: 218px; height: 180px;" alt="">
+										<h4>Сырные пятачки из собственной сыровани</h4>
+										<p>В пряном масле с вялеными томатами и травами</p>
+										<p>220 г / 150 ккал.</p>
+										<div class="slide__item__price">350, — ₽</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="slide__item">
+										<img src="img/menu_img/img3.png" style="width: 218px; height: 180px;" alt="">
+										<h4>Сыр из собственной сыроварни</h4>
+										<p>Приготовленный по старинному кавказскому рецепту, подается на пергаменте со
+											сладкой горчицей</p>
+										<p>50 г / 90 ккал.</p>
+										<div class="slide__item__price">150, — ₽</div>
+									</div>
+								</div>
 
-				<div class="content-menu">
-					<h1  class="menu-title">Меню</h1>
-					<h4 class="sub-title">От нас невозможно уйти голодным. К вашим услугам лучший шеф-повар Москвы.</h4>
-					<div class="desc">Горячие закуски</div>
-				</div>
+								<div class="swiper-slide">
+									<div class="slide__item">
+										<img src="img/menu_img/img4.png" style="width: 218px; height: 180px;" alt="">
+										<h4>Сало трёх видов с хреном и горчицей</h4>
+										<p>Сало в острой перечной обсыпке, с чесноком и сало собственного копчения.</p>
+										<p>220 г / 150 ккал.</p>
+										<div class="slide__item__price">270, — ₽</div>
+									</div>
+								</div>
 
-				<div class="menu-snacks">
-					<div class="slide__item">
-						<div class="snack">
-							<img class="foto__snack" src="img/menu_img/img1.png" alt="">
-						</div>
-						<h4 class="snack__title">Тарелка свежих овощей с чесночно-творожным соусом</h4>
-						<div class="snack__text">
-							<p>Сладкий перец, томаты, огурцы, зеленые перья лука, зелень, стебли сельдерея</p>
-							<br>
-							<p>220 г / 150 ккал.</p>
-						</div>
-						<div class="price snack-price">210, — ₽</div>
-					</div>
 
-					<div class="slide__item">
-						<div class="snack">
-							<img class="foto__snack" src="img/menu_img/img2.png" alt="">
-						</div>
-						<h4 class="snack__title">Сырные пятачки из собственной сыровани</h4>
-						<div class="snack__text">
-							<p>В пряном масле с вялеными томатами и травами</p>
-							<br>
-							<p>220 г / 150 ккал.</p>
-						</div>
-						<div class="price snack-price">350, — ₽</div>
-					</div>
+							</div>
 
-					<div class="slide__item">
-						<div class="snack">
-							<img class="foto__snack" src="img/menu_img/img3.png" alt="">
 						</div>
-						<h4 class="snack__title">Сыр из собственной сыроварни</h4>
-						<div class="snack__text">
-							<p>Приготовленный по старинному кавказскому рецепту, подается на пергаменте со сладкой горчицей</p>
-							<br>
-							<p>50 г	/ 90 ккал.</p>
+					</li>
+					<li class="menu-lists__list-item" data-tab="#Slide-2">
+						<div class="menu-lists__list-item__title">
+							<img src="img/menu_items/item2.png" style="width: 43px; height: 38px;" alt="">
+							<h2>Пивные закуски</h2>
 						</div>
-						<div class="price snack-price">150, — ₽</div>
-					</div>
 
-					<div class="slide__item">
-						<div class="snack">
-							<img class="foto__snack" src="img/menu_img/img4.png" alt="">
-						</div>
-						<h4 class="snack__title">Сало трёх видов с хреном и горчицей</h4>
-						<div class="snack__text">
-							<p>Сало в острой перечной обсыпке, с чесноком и сало собственного копчения.</p>
-							<br>
-							<p>220 г / 150 ккал </p>
-						</div>
-						<div class="price snack-price">270, — ₽</div>
-					</div>
+						<div class="swiper swiper-block" id="Slide-2">
+							<div class="swiper-wrapper">
 
-					<div class="slide__item hidden__items">
-						<div class="snack">
-							<img class="foto__snack" src="img/menu_img/img5.png" alt="">
-						</div>
-						<h4 class="snack__title">Мясная лавка</h4>
-						<div class="snack__text">
-							<p>Свиная шейка, говяжья вырезка, приготовленные на медленных температурах, копченая собственноручно грудка индюшки на тонком лаваше с домашним печеночным паштетом на портвейне, хреном, горчицей и поджаренным белым хлебом</p>
-							<br>
-							<p>450 г/ 670 ккал.	</p>
-						</div>
-						<div class="price snack-price">730, — ₽</div>
-					</div>
+								<div class="swiper-slide">
+									<div class="slide__item">
+										<img src="img/menu_img/img5.png" style="width: 218px; height: 180px;" alt="">
+										<h4>Сало трёх видов с хреном и горчицей</h4>
+										<p>Сало в острой перечной обсыпке, с чесноком и сало собственного копчения.
+										</p>
+										<p>220 г / 150 ккал.</p>
+										<div class="slide__item__price">270, — ₽</div>
+									</div>
+								</div>
 
-					<div class="slide__item hidden__items">
-						<div class="snack">
-							<img class="foto__snack" src="img/menu_img/img6.png" alt="">
-						</div>
-						<h4 class="snack__title">Маринованные собственноручно томаты с луком</h4>
-						<div class="snack__text">
-							<p>Подаются в банке на доске с разными соленьями</p>
-							<br>
-							<p>250 г/ 150 ккал.	</p>
-						</div>
-						<div class="price snack-price">330, — ₽</div>
-					</div>
+								<div class="swiper-slide">
+									<div class="slide__item">
+										<img src="img/menu_img/img6.png" style="width: 218px; height: 180px;" alt="">
+										<h4>Сыр из собственной сыроварни</h4>
+										<p>Приготовленный по старинному кавказскому рецепту, подается на пергаменте
+											со
+											сладкой горчицей</p>
+										<p>50 г / 90 ккал.</p>
+										<div class="slide__item__price">150, — ₽</div>
+									</div>
+								</div>
 
-				</div> <!-- /menu-snacks -->
+								<div class="swiper-slide">
+									<div class="slide__item">
+										<img src="img/menu_img/img7.png" style="width: 218px; height: 180px;" alt="">
+										<h4>Сырные пятачки из собственной сыровани</h4>
+										<p>В пряном масле с вялеными томатами и травами</p>
+										<p>220 г / 150 ккал.</p>
+										<div class="slide__item__price">350, — ₽</div>
+									</div>
+								</div>
 
-				<div class="menu">
-					<a href="#" class="menu__item item1">Пивные закуски</a>
-					<a href="#" class="menu__item item2">Салаты</a>
-					<a href="#" class="menu__item item3">Супы</a>
-					<a href="#" class="menu__item item4">Мясо</a>
-					<a href="#" class="menu__item item5">Гарниры</a>
-					<a href="#" class="menu__item item6">Десерты</a>
-					<a href="#" class="menu__item item7">Напитки</a>
-				</div>
+								<div class="swiper-slide">
+									<div class="slide__item">
+										<img src="img/menu_img/img8.png" style="width: 218px; height: 180px;" alt="">
+										<h4>Тарелка свежих овощей с чесночно-творожным соусом</h4>
+										<p>Сладкий перец,томаты, огурцы, зеленые перья лука, зелень, стебли
+											сельдерея
+										</p>
+										<p>220 г / 150 ккал.</p>
+										<div class="slide__item__price">210, — ₽</div>
+									</div>
+								</div>
+
+							</div>
+					</li>
+					<li class="menu-lists__list-item" data-tab="#Slide-3">
+						<div class="menu-lists__list-item__title">
+							<img src="img/menu_items/item3.png" style="width: 40px; height: 43px;" alt="">
+							<h2>Салаты</h2>
+						</div>
+					</li>
+					<li class="menu-lists__list-item" data-tab="#Slide-4">
+						<div class="menu-lists__list-item__title">
+							<img src="img/menu_items/item4.png" style="width: 41px; height: 26px;" alt="">
+							<h2>Супы</h2>
+						</div>
+					</li>
+					<li class="menu-lists__list-item" data-tab="#Slide-5">
+						<div class="menu-lists__list-item__title">
+							<img src="img/menu_items/item5.png" style="width: 41px; height: 26px;" alt="">
+							<h2>Мясо</h2>
+						</div>
+					</li>
+					<li class="menu-lists__list-item" data-tab="#Slide-6">
+						<div class="menu-lists__list-item__title">
+							<img src="img/menu_items/item6.png" style="width: 43px; height: 38px;" alt="">
+							<h2>Гарниры</h2>
+						</div>
+					</li>
+					<li class="menu-lists__list-item" data-tab="#Slide-7">
+						<div class="menu-lists__list-item__title">
+							<img src="img/menu_items/item7.png" style="width: 40px; height: 43px;" alt="">
+							<h2>Десерты</h2>
+						</div>
+					</li>
+					<li class="menu-lists__list-item menu-lists__list-item--last" data-tab="#Slide-8">
+						<div class="menu-lists__list-item__title">
+							<img src="img/menu_items/item8.png" style="width: 27px; height: 38px;" alt="">
+							<h2>Напитки</h2>
+						</div>
+					</li>
+				</ul>
+
+
 			</div> <!-- /container -->
+
 		</div> <!-- / box-menu -->
 
 		<div class="banner banner-2">
 			<div class="container">
 				<fieldset class="fieldset">
-						<legend class="title__banner title__second__banner">классический стейк филе миньон</legend>
-						<div class="content__text text__banner second__banner__text"><p>Центральная часть нежнейшей, высокосортной говяжьей вырезки со свежими овощами в прикуску,  с пикантным кислосладким соусом и гарниром на выбор.</p>
-						</div>
-						<div class="about-banner">
-							<h1 class="price price-banner-2">210, — ₽</h1>
-							<p class="calories">450 г / 350 ккал.</p>
-						</div>
+					<legend class="title__banner title__second__banner">классический стейк филе миньон</legend>
+					<div class="content__text text__banner second__banner__text">
+						<p>Центральная часть нежнейшей, высокосортной говяжьей вырезки со свежими овощами в прикуску, с
+							пикантным кислосладким соусом и гарниром на выбор.</p>
+					</div>
+					<div class="about-banner">
+						<h1 class="price price-banner-2">210, — ₽</h1>
+						<p class="calories">450 г / 350 ккал.</p>
+					</div>
 				</fieldset>
 			</div> <!-- /container -->
 		</div> <!-- /banner -->
 
 		<div class="gallery">
 			<div class="gallery__item">
-				<img class="item__img" src="img/gallery/foto1.png" alt="" >
+				<img class="item__img" src="img/gallery/foto1.png" alt="">
 			</div>
 
 			<div class="gallery__item">
-				<img class="item__img" src="img/gallery/foto2.png" alt="" >
+				<img class="item__img" src="img/gallery/foto2.png" alt="">
 			</div>
 
 			<div class="gallery__item">
-				<img class="item__img" src="img/gallery/foto3.png" alt="" >
+				<img class="item__img" src="img/gallery/foto3.png" alt="">
 			</div>
 
-			<div class="gallery__item">
-				<img class="item__img" src="img/gallery/foto4.png" alt="" >
-			</div>
+			<!-- <div class="gallery__item">
+			<img class="item__img" src="img/gallery/foto4.png" alt="">
+		</div> -->
+
+			<!-- <div class="gallery__item">
+			<img class="item__img" src="img/gallery/foto5.png" alt="">
+		</div> -->
+
+			<!-- <div class="gallery__item">
+			<img class="item__img" src="img/gallery/foto6.png" alt="">
+		</div> -->
 
 			<div class="gallery__item">
-				<img class="item__img" src="img/gallery/foto5.png" alt="" >
-			</div>
-
-			<div class="gallery__item">
-				<img class="item__img" src="img/gallery/foto6.png" alt="" >
-			</div>
-
-			<div class="gallery__item">
-				<img class="item__img" src="img/gallery/foto7.png" alt="" >
+				<img class="item__img" src="img/gallery/foto7.png" alt="">
 			</div>
 		</div>
 
 		<div id="location" class="box box-location">
 			<div class="container">
-				<h1  class="location__title">рестораны</h1>
+				<h1 class="location__title">рестораны</h1>
 				<div class="location">
 					<div class="location__item">
 						<h2 class="location__subtitle">Честный стейк</h2>
@@ -235,7 +292,7 @@
 							</div>
 						</div>
 					</div>
-				
+
 					<div class="location__item">
 						<h2 class="location__subtitle">Че Гевара</h2>
 						<a href="#" class="adress">Санкт-Петербург, Каменноостровский пр., 62,</a>
@@ -253,7 +310,7 @@
 							</div>
 						</div>
 					</div>
-				
+
 					<div class="location__item">
 						<h2 class="location__subtitle">Стейкхауз</h2>
 						<a href="#" class="adress">Псков, Суворовский пр., 36,</a>
@@ -278,34 +335,37 @@
 		<div id="pressroom" class="pressroom">
 			<div class="container container-presroom">
 				<div class="news">
-					<h1  class="pressroom__title">прессрум</h1>
+					<h1 class="pressroom__title">прессрум</h1>
 					<div class="news-items">
 						<div class="data__item">
 							<time class="datetime" datetime="2021-05-19">19 мая, 2021</time>
 						</div>
 						<div class="news__item">
-							<p>Компания Leicht Moscow, ресторанный холдинг Fresco Group и ресторан «Вилла Роза» дали старт новому совместному проекту.</p>
+							<p>Компания Leicht Moscow, ресторанный холдинг Fresco Group и ресторан «Вилла Роза» дали
+								старт новому совместному проекту.</p>
 						</div>
 					</div> <!-- /news items -->
 
 					<div class="news-items">
 						<div class="data__item">
-							<time class="datetime" datetime="2021-05-19">3 февраля,  2021</time>
+							<time class="datetime" datetime="2021-05-19">3 февраля, 2021</time>
 						</div>
 						<div class="news__item">
-							<p>Летняя веранда ресторана «Вилла Роза» среди лучших предложений Москвы в Resto.ru – поисковой системе для гурманов.</p>
+							<p>Летняя веранда ресторана «Вилла Роза» среди лучших предложений Москвы в Resto.ru –
+								поисковой системе для гурманов.</p>
 						</div>
 					</div> <!-- /news items -->
 
 					<div class="news-items">
 						<div class="data__item">
-							<time class="datetime" datetime="2021-05-19">7 сентября,  2021</time>
+							<time class="datetime" datetime="2021-05-19">7 сентября, 2021</time>
 						</div>
 						<div class="news__item">
-							<p>У нас новая винная карта. Надеемся, что среди многочисленных наименований Вы найдете свое любимое вино.</p>
+							<p>У нас новая винная карта. Надеемся, что среди многочисленных наименований Вы найдете свое
+								любимое вино.</p>
 						</div>
 					</div> <!-- /news items -->
-				
+
 				</div> <!-- /news -->
 
 				<div class="social">
@@ -313,19 +373,19 @@
 					<div class="social-icons">
 						<div class="social__icon linkedin">
 							<a href="#" class="goto">
-								<img class="icon__img" src="img/social/ln.png" alt="">
+								<img class="icon__img" src="img/socials/ln.png" alt="">
 							</a>
 						</div>
 
 						<div class="social__icon twitter">
 							<a href="#" class="goto">
-								<img class="icon__img" src="img/social/twitter.png" alt="">
+								<img class="icon__img" src="img/socials/twitter.png" alt="">
 							</a>
 						</div>
 
 						<div class="social__icon facebook">
 							<a href="#" class="goto">
-								<img class="icon__img" src="img/social/facebook.png" alt="">
+								<img class="icon__img" src="img/socials/facebook.png" alt="">
 							</a>
 						</div>
 					</div> <!-- /social-icons -->
@@ -334,16 +394,20 @@
 					<form class="form" action="/">
 						<input class="input" type="text" name="email" placeholder="Эл. почта">
 						<button class="button">
-							<img src="img/social/form_btn.png" alt="" class="form__btn">
+							<img src="img/socials/form_btn.png" alt="" class="form__btn">
 						</button>
 					</form>
 				</div> <!-- /social -->
 			</div> <!-- /container -->
-			
+
 		</div> <!-- /pressroom -->
 	</div> <!-- /page -->
 
+	<link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+
+	<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 	<script src="js/script.js"></script>
 
 </body>
+
 </html>
