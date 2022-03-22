@@ -104,14 +104,13 @@ new Swiper('.swiper-gallery', {
   loop: true,
   freeMode: true,
   slidesPerView: 4,
-  mousewheel: true,
   breakpointsInverse: true,
   breakpoints: {
     0: {
       slidesPerView: 1,
     },
 
-    400: {
+    420: {
       slidesPerView: 2,
     },
 
