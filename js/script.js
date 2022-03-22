@@ -100,4 +100,29 @@ new Swiper('.swiper', {
   }
 });
 
+new Swiper('.swiper-gallery', {
+  loop: true,
+  freeMode: true,
+  slidesPerView: 4,
+  mousewheel: true,
+  breakpointsInverse: true,
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+
+    400: {
+      slidesPerView: 2,
+    },
+
+    800: {
+      slidesPerView: 3,
+    },
+
+    912: {
+      slidesPerView: 4,
+    },
+
+  }
+});
 
