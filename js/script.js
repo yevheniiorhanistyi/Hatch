@@ -3,19 +3,25 @@
 let menuBtn = document.querySelector('.menu-btn');
 let menu = document.querySelector('.header-list');
 
-menuBtn.addEventListener('click', clicked);
+menuBtn.addEventListener('click', clickedMenuBtn);
 menu.addEventListener('click', clicked);
 
 function clicked() {
+  menu.classList.remove('active');
+  menuBtn.classList.remove('active');
+  showScroll();
+}
+
+function clickedMenuBtn() {
   menuBtn.classList.toggle('active');
   menu.classList.toggle('active');
-
   if (menuBtn.classList.contains('active')) {
     hideScroll();
   }
   else {
     showScroll();
   }
+
 }
 
 const hideScroll = () => {
