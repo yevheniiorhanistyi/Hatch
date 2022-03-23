@@ -1,12 +1,8 @@
 /* start 04.11.2021 */
+@import url("/css/normalize.css");
 @font-face {
   font-family: PTSans;
   src: url("../PTSans/PTSans-Regular.ttf");
-  font-display: swap;
-}
-@font-face {
-  font-family: PTSans-bold;
-  src: url("../PTSans/PTSans-Bold.ttf");
   font-display: swap;
 }
 html {
@@ -35,8 +31,6 @@ p {
   margin: 0;
 }
 
-/* === fanction === */
-/* === / fanction === */
 /* === variables === */
 /* === / variables === */
 /* === mixins === */
@@ -71,9 +65,9 @@ p {
 .header {
   width: 100%;
   max-width: 100%;
-  height: 3.75rem;
+  height: 60px;
   background-color: #fff;
-  padding: 0.25rem 0.75rem;
+  padding: 4px 12px;
 }
 
 .header__items {
@@ -88,16 +82,16 @@ p {
           align-items: center;
   width: 100%;
   max-width: 1100px;
-  padding: 0 0.75rem;
+  padding: 0 12px;
   margin: 0 auto;
 }
 
 .header__logo {
   display: block;
   width: 100%;
-  max-width: 4.25rem;
+  max-width: 68px;
   height: 100%;
-  max-height: 2.75rem;
+  max-height: 44px;
   cursor: pointer;
 }
 
@@ -111,7 +105,7 @@ a {
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 0.125rem;
+  height: 2px;
   background-color: #000;
   -webkit-transition: 0.2s;
   transition: 0.2s;
@@ -131,7 +125,7 @@ a {
   color: #000;
   cursor: pointer;
   text-decoration: none;
-  margin-right: 3.75rem;
+  margin-right: 60px;
 }
 
 .intro__logo {
@@ -139,7 +133,7 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 0 auto 2.5rem;
+  margin: 0 auto 40px;
 }
 
 .content {
@@ -160,9 +154,8 @@ a {
 
 .content__title {
   font-size: 1em;
-  font-weight: 700;
   text-transform: uppercase;
-  margin-bottom: 1.5rem;
+  margin-bottom: 24px;
 }
 
 .content__img {
@@ -258,30 +251,30 @@ a {
 }
 
 .container-menu {
-  margin-bottom: 3rem;
+  margin-bottom: 48px;
 }
 @media (max-width: 725px) {
   .container-menu {
     text-align: center;
-    margin-bottom: 2rem;
+    margin-bottom: 32px;
   }
 }
 
 .menu-title {
-  font-size: 3.75rem;
+  font-size: 60px;
   font-weight: bold;
-  padding-top: 5.25rem;
-  padding-bottom: 0.25rem;
+  padding-top: 84px;
+  padding-bottom: 4px;
 }
 @media (max-width: 725px) {
   .menu-title {
-    padding-top: 2rem;
+    padding-top: 32px;
   }
 }
 
 .menu-subtitle {
-  font-size: 1.25rem;
-  padding-bottom: 2.5rem;
+  font-size: 20px;
+  padding-bottom: 40px;
 }
 
 .swiper-block {
@@ -306,15 +299,15 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-bottom: 1rem;
-  margin-bottom: 1.25rem;
+  padding-bottom: 16px;
+  margin-bottom: 20px;
   cursor: pointer;
 }
 .menu-lists__list-item__title h2 {
   font-weight: 700;
-  font-size: 1.5rem;
+  font-size: 24px;
   color: #000;
-  padding-left: 1.5rem;
+  padding-left: 24px;
 }
 .menu-lists__list-item__title::before {
   position: absolute;
@@ -328,7 +321,7 @@ a {
 }
 .menu-lists__list-item .swiper {
   max-width: 1100px;
-  height: 500px;
+  height: 540px;
 }
 .menu-lists__list-item .slide__item {
   width: 220px;
@@ -341,25 +334,25 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 1.5rem;
+  margin-bottom: 24px;
 }
 .menu-lists__list-item .slide__item h4 {
   font-weight: 700;
-  font-size: 1.25rem;
-  margin-bottom: 1.25rem;
+  font-size: 20px;
+  margin-bottom: 20px;
 }
 .menu-lists__list-item .slide__item p {
   font-weight: 400;
   font-size: 1em;
-  margin-bottom: 1.25rem;
+  margin-bottom: 20px;
 }
 .menu-lists__list-item .slide__item__price {
   font-weight: 700;
-  font-size: 1.75rem;
-  margin-bottom: 2.5rem;
+  font-size: 28px;
+  margin-bottom: 40px;
 }
 .menu-lists__list-item--last {
-  margin-left: 0.5rem;
+  margin-left: 8px;
 }
 
 /* === / menu === */
@@ -585,7 +578,7 @@ a {
   width: 100px;
   font-size: 0.75em;
   font-weight: 400;
-  color: #818181;
+  color: #000;
   margin-right: 85px;
 }
 
@@ -787,7 +780,7 @@ button:focus {
   }
 
   .intro__logo {
-    margin-bottom: 1.25rem;
+    margin-bottom: 20px;
   }
 }
 @media (max-width: 725px) {
@@ -803,8 +796,9 @@ button:focus {
     width: 30px;
     height: 30px;
     position: relative;
-    z-index: 102;
+    z-index: 118;
     overflow: hidden;
+    cursor: pointer;
   }
 
   .menu-btn span {
