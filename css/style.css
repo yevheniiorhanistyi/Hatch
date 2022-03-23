@@ -1,4 +1,14 @@
 /* start 04.11.2021 */
+@font-face {
+  font-family: PTSans;
+  src: url("/PTSans/PTSans-Regular.ttf");
+  font-display: swap;
+}
+@font-face {
+  font-family: PTSans-bold;
+  src: url("/PTSans/PTSans-Bold.ttf");
+  font-display: swap;
+}
 html {
   font-size: 16px;
   scroll-behavior: smooth;
@@ -7,7 +17,7 @@ html {
 
 body {
   margin: 0;
-  font-family: "PT Sans", sans-serif;
+  font-family: PTSans, sans-serif;
 }
 
 *,
@@ -46,7 +56,7 @@ p {
 .box-intro {
   min-height: 500px;
   position: relative;
-  background: url("../img/bg/introbg.jpeg") no-repeat;
+  background: url("../img/bg/introbg.webp") no-repeat;
   background-size: cover;
 }
 
@@ -129,8 +139,7 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-bottom: 2.5rem;
-  margin: 0 auto;
+  margin: 0 auto 2.5rem;
 }
 
 .content {
@@ -181,7 +190,7 @@ a {
 .banner-1 {
   position: relative;
   max-height: 1000px;
-  background: url("../img/bg/banner-1.png") no-repeat;
+  background: url("../img/bg/banner-1.webp") no-repeat;
   background-size: cover;
 }
 
@@ -359,7 +368,7 @@ a {
   position: relative;
   max-height: 1000px;
   min-height: 420px;
-  background: url("../img/bg/banner-2.png") no-repeat;
+  background: url("../img/bg/banner-2.webp") no-repeat;
   background-size: cover;
 }
 
@@ -418,7 +427,7 @@ a {
   min-height: 560px;
   max-height: 975px;
   position: relative;
-  background: url("../img/bg/location_bg.png") no-repeat;
+  background: url("../img/bg/location_bg.webp") no-repeat;
   background-size: cover;
 }
 
@@ -776,6 +785,10 @@ button:focus {
   .box-location {
     max-height: 1005px;
   }
+
+  .intro__logo {
+    margin-bottom: 1.25rem;
+  }
 }
 @media (max-width: 725px) {
   /* ===  burgerMenu === */
@@ -900,10 +913,6 @@ button:focus {
 
   .box-intro {
     height: 90vh;
-  }
-
-  .intro__logo {
-    padding-bottom: 20px;
   }
 
   .header {
