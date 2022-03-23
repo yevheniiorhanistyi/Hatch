@@ -1,12 +1,12 @@
 /* start 04.11.2021 */
 @font-face {
   font-family: PTSans;
-  src: url("/PTSans/PTSans-Regular.ttf");
+  src: url("../PTSans/PTSans-Regular.ttf");
   font-display: swap;
 }
 @font-face {
   font-family: PTSans-bold;
-  src: url("/PTSans/PTSans-Bold.ttf");
+  src: url("../PTSans/PTSans-Bold.ttf");
   font-display: swap;
 }
 html {
