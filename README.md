@@ -1,5 +1,6 @@
 # Landing page "The Hatch"
 ### I used here :
+- BEM
 - Less
 - Swiper slider 
 <p>
