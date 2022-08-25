@@ -1,7 +1,9 @@
 # Landing page "The Hatch"
-<p>One of the projects where i worked with preprocessors and Swiper slider for the first time.</p><br>
+<p>I used here :</p>
+- Less
+- Swiper slider
 https://yevheniiorhanistyi.github.io/resto/
 <p></p>
 <p>
-  <img src="img/xyu.png"/>
+  <img src="img/preview.png"/>
 </p>
