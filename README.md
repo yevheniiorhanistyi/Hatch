@@ -6,4 +6,4 @@
 <p>
   <img src="img/hatchPreview.png"/>
 </p>
-<p>Go to : https://yevheniiorhanistyi.github.io/resto/</p>
+<p>Go to : https://yevheniiorhanistyi.github.io/Hatch/</p>
