@@ -4,6 +4,6 @@
 - Less
 - Swiper slider 
 <p>
-  <img src="img/preview.png"/>
+  <img src="img/hatchPreview.png"/>
 </p>
 <p>Go to : https://yevheniiorhanistyi.github.io/resto/</p>
