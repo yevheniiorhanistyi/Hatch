@@ -1,5 +1,5 @@
 # Landing page "The Hatch"
-### I used here :
+### Was used here :
 - BEM
 - Less
 - Swiper slider 
